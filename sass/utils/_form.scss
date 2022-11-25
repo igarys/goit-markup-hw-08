@@ -1,0 +1,59 @@
+.form {
+  padding: 40px;
+  width: 100%;
+  display: block;
+
+&__header {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+}
+&__fieldset {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  margin-bottom: 28px;
+}
+}
+.form__label {
+  position: absolute;
+  left: 0;
+  top: -18px;
+  color: rgba(117, 117, 117, 1);
+  font-size: 12px;
+  font-weight: 400px;
+}
+.form__icon {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+.form__input {
+  display: flex;
+  margin-left: 26px;
+  margin-block: 3px;
+  border: 0;
+  outline: 0;
+  width: 90%;
+}
+.form__input--comment {
+  margin-left: 0;
+  width: 100%;
+  resize: none;
+}
+.form__fieldset--comment {
+  height: 120px;
+  margin-bottom: 20px;
+}
+.form__fieldset:focus-within {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: $color-blue;
+}
+.form__fieldset:focus-within .form__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $color-blue;
+}

@@ -1,0 +1,20 @@
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: $color-white;
+  margin: auto;
+  display: flex;
+  position: relative;
+
+ &__btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+}

@@ -1,0 +1,24 @@
+
+.team {
+  background-color: #f5f4fa;
+  margin-top: 94px;
+
+  &__names {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-black;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  &__occupation {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-grey;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+}

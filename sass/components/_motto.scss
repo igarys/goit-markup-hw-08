@@ -1,0 +1,37 @@
+.motto {
+  background-image: url(../images/background.jpg);
+  height: 600px;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+
+ &__header {
+  font-family: inherit;
+  font-size: 44px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+ &__wrapper {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  width: 696px;
+}
+}
+.motto__btn {
+  background-color: $color-blue;
+  color: $color-white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  padding-block: 10px;
+  padding-left: 47px;
+  padding-right: 47px;
+  cursor: pointer;
+  line-height: 1.88;
+}
+
+

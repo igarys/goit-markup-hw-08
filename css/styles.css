@@ -1,0 +1,23 @@
+/* Portfolio CSS  */
+
+/* HW 05 */
+
+/* .nav__border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $color-blue;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__border:hover::after {
+  opacity: 1;
+} */
+
+/* HW 06 */

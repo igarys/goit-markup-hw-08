@@ -1,0 +1,45 @@
+.box {
+  gap: 30px;
+  justify-content: center;
+  margin: auto;
+
+    &__feature {
+      max-width: 270px;}
+  
+    }
+
+.box__feature {
+
+      &__svg {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+  }
+   &__svg--icon {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+   }
+}
+
+.box__feature {
+  &__header {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-black;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-grey;
+    margin: 0;
+  }
+}
+
