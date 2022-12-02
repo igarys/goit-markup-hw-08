@@ -1,14 +1,20 @@
 .checkbox {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+  font-family: inherit;
   color: $color-grey;
-  line-height: 1.71px;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   margin-left: 39px;
   height: 24px;
   margin-bottom: 30px;
   position: relative;
+  
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
 &__value {
   width: 0;

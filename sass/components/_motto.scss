@@ -1,24 +1,45 @@
 .motto {
-  background-image: url(../images/background.jpg);
-  height: 600px;
+  background-size: cover;
+  background-position: center center;
   display: flex;
-  max-width: 1600px;
-  margin: 0 auto;
+  background-repeat: no-repeat;
 
- &__header {
-  font-family: inherit;
-  font-size: 44px;
-  font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 30px;
+  @media screen and (max-width: $tablet) {
+    background-image: url(/images/header.jpg);
+    height: 400px;
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url(/images/header-t.jpg);
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/background.jpg);
+    height: 600px;
+  }
+
+  &__header {
+    font-family: inherit;
+    font-size: 44px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-block: 0 30px;
+    margin-inline: auto;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 26px;
+      line-height: 1.61;
+      width: 365px;
+    }
+  }
+  &__wrapper {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 696px;
+  }
 }
- &__wrapper {
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  width: 696px;
-}
-}
+
 .motto__btn {
   background-color: $color-blue;
   color: $color-white;
@@ -34,4 +55,24 @@
   line-height: 1.88;
 }
 
-
+@media (min-device-pixel-ratio: 2) and (min-width: 320px),
+  (min-resolution: 192dpi) and (min-width: 320px),
+  (min-resolution: 2dppx) and (min-width: 320px) {
+  .motto {
+    background-image: url(/images/header@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: $tablet),
+  (min-resolution: 192dpi) and (min-width: $tablet),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
+  .motto {
+    background-image: url(/images/header-t@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  (min-resolution: 192dpi) and (min-width: $desktop),
+  (min-resolution: 2dppx) and (min-width: $desktop) {
+  .motto {
+    background-image: url(/images/background@2x.jpg);
+  }
+}

@@ -3,8 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
   position: relative;
+  width: 100%;
+ 
+  
+  @media screen and (max-width: $tablet) {
+    height: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
 }
 
 .nav {
@@ -39,6 +47,7 @@
   padding-left: 0;
   margin: 0;
 }
+
 
 .list-item {
   text-decoration: none;
@@ -98,4 +107,30 @@
 .list-item--active,
 .portfolio {
   color: $color-blue;
+}
+
+//---- MOBILE----
+
+@media screen and (max-width: 767px) {
+  .list{
+    display: none;
+  }
+}
+
+
+.mobile-menu__button { 
+display: flex;
+width: 40px;
+height: 40px;
+justify-content: center;
+align-items: center;
+
+ &:hover {
+  cursor: pointer;
+  fill: $color-blue;
+ }
+
+@media screen and (min-width: $tablet) {
+  display: none;
+}
 }

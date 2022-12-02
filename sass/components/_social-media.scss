@@ -11,6 +11,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 0;
+  }
   &:hover {
     background-color: $color-blue;
     cursor: pointer;
@@ -27,6 +30,9 @@
   gap: 10px;
   list-style: none;
   justify-content: center;
+  @media screen and (max-width: $tablet) {
+    margin: 0;
+  }
 }
 .svg-list {
   display: flex;

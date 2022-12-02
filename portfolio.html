@@ -23,20 +23,54 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-border">
-      <div class="container header">
+     <header>
+      <!-- mobile menu -->
+      <div class="mobile-menu d-none">
+        <button class="mobile-menu__btn">
+          <svg class="mobile-menu__btn__icon" width="18.67" height="18.67">
+                  <use href="./images/icons.svg#icon-close-menu-btn"></use>
+           </svg>
+        </button>
+        <div class="container-menu">
+         <div>
+          <ul class="mobile-menu__list">
+          <li class="mobile-menu__list__item"><a class="mobile-menu__list__item__link" href="./index.html">Agencja</a></li>
+          <li class="mobile-menu__list__item"><a class="mobile-menu__list__item__link" href="./portfolio.html">Portfolio</a></li>
+          <li class="mobile-menu__list__item"><a class="mobile-menu__list__item__link" href="/">Kontakt</a></li>
+         </ul>
+         </div>
+         <div class="mobile-menu__contact">
+         <ul class="mobile-menu__list mobile-menu__contact__list">
+          <li class="mobile-menu__contact__list__item"><a class="mobile-menu__contact__list__item" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li class="mobile-menu__contact__list__item--mail"><a class="mobile-menu__contact__list__item--mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+         </ul>
+         <div class="mobile-menu__social-media">
+          <div>Instagram</div>
+          <span class="mobile-menu__social-media__line"></span>
+          <div>Twitter</div> 
+          <span class="mobile-menu__social-media__line"></span>
+          <div>Facebook</div>  
+          <span class="mobile-menu__social-media__line"></span>
+          <div>LinkedIn</div>
+         </div>
+         </div>
+        </div>
+      </div>
+      <!-- mobile menu ends  -->
+      <div class="header-border container">
+        <div class="header">
         <nav class="nav">
           <a class="nav__logo" href="./index.html"
             ><span>Web</span><span class="nav__studio">Studio</span>
           </a>
           <ul class="list nav__list">
             <li class="nav__border">
-              <a class="list-item" href="./index.html">Agencja</a>
+              <a class="list-item list-item--active" href="./index.html"
+                >Agencja</a
+              >
             </li>
             <li class="nav__border">
-              <a class="list-item portfolio" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="list-item" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav__border">
               <a class="list-item" href="/">Kontakt</a>
@@ -55,7 +89,7 @@
             </li>
             <li>
               <a class="email__item" href="tel:+48111111111">
-                <svg class="svg email__svg-tel" width="10" height="16">
+                <svg class="email__svg-tel" width="10" height="16">
                   <use href="./images/icons.svg#icon-Phone"></use>
                 </svg>
                 +48 111 111 111</a
@@ -63,7 +97,13 @@
             </li>
           </ul>
         </div>
+        <div class="mobile-menu__button">
+         <svg width="24" height="16">
+           <use href="./images/icons.svg#icon-menu"></use>
+         </svg>
+       </div>
       </div>
+      </div> 
     </header>
 
     <main class="section">
@@ -97,12 +137,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img.jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app1-d.webp 1x, ./images/app/app1-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app1-d.jpg 1x, ./images/app/app1-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app1-t.webp 1x, ./images/app/app1-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app1-t.jpg 1x, ./images/app/app1-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app1.webp 1x, ./images/app/app1@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app1.jpg 1x, ./images/app/app1@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app1.jpg"
                   alt="computer with pictures of people"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
               <figcaption>
                 <h3 class="app__header">Technocrack</h3>
@@ -120,12 +183,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(1).jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app2-d.webp 1x, ./images/app/app2-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app2-d.jpg 1x, ./images/app/app2-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app2-t.webp 1x, ./images/app/app2-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app2-t.jpg 1x, ./images/app/app2-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app2.webp 1x, ./images/app/app2@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app2.jpg 1x, ./images/app/app2@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app2.jpg"
                   alt="basketball players"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
               <figcaption>
                   <h3 class="app__header">Grafika New Orlean vs Golden Star</h3>
@@ -142,12 +228,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(2).jpg"
+               <picture>
+                <source
+                  srcset="./images/app/app3-d.webp 1x, ./images/app/app3-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app3-d.jpg 1x, ./images/app/app3-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app3-t.webp 1x, ./images/app/app3-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app3-t.jpg 1x, ./images/app/app3-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app3.webp 1x, ./images/app/app3@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app3.jpg 1x, ./images/app/app3@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app3.jpg"
                   alt="seafood restaurant logo"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
               <figcaption>
                 <h3 class="app__header">Restauracja Seafood</h3>
@@ -165,12 +274,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(3).jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app4-d.webp 1x, ./images/app/app4-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app4-d.jpg 1x, ./images/app/app4-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app4-t.webp 1x, ./images/app/app4-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app4-t.jpg 1x, ./images/app/app4-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app4.webp 1x, ./images/app/app4@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app4.jpg 1x, ./images/app/app4@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app4.jpg"
                   alt="headphones"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
               <figcaption>
                 <div>
@@ -189,12 +321,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(4).jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app5-d.webp 1x, ./images/app/app5-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app5-d.jpg 1x, ./images/app/app5-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app5-t.webp 1x, ./images/app/app5-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app5-t.jpg 1x, ./images/app/app5-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app5.webp 1x, ./images/app/app5@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app5.jpg 1x, ./images/app/app5@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app5.jpg"
                   alt="two boxes"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
               <figcaption>
                 <h3 class="app__header">Project Boxes</h3>
@@ -211,12 +366,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(5).jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app6-d.webp 1x, ./images/app/app6-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app6-d.jpg 1x, ./images/app/app6-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app6-t.webp 1x, ./images/app/app6-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app6-t.jpg 1x, ./images/app/app6-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app6.webp 1x, ./images/app/app6@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app6.jpg 1x, ./images/app/app6@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app6.jpg"
                   alt="computer with some data"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
               <figcaption>
                 <h3 class="app__header">Inspiration has no Borders</h3>
@@ -233,14 +411,36 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(6).jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app7-d.webp 1x, ./images/app/app7-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app7-d.jpg 1x, ./images/app/app7-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app7-t.webp 1x, ./images/app/app7-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app7-t.jpg 1x, ./images/app/app7-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app7.webp 1x, ./images/app/app7@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app7.jpg 1x, ./images/app/app7@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app7.jpg"
                   alt="an open book"
-                  width="370"
-                  height="294px"
-                />
-              </div>
-
+                  /></picture>
+              </div>9
               <figcaption>
                 <h3 class="app__header">Magazyn Limited Edition</h3>
                 <p class="app__description">Design</p>
@@ -256,12 +456,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(7).jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app8-d.webp 1x, ./images/app/app8-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app8-d.jpg 1x, ./images/app/app8-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app8-t.webp 1x, ./images/app/app8-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app8-t.jpg 1x, ./images/app/app8-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app8.webp 1x, ./images/app/app8@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app8.jpg 1x, ./images/app/app8@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app8.jpg"
                   alt="label tag"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
 
               <figcaption>
@@ -279,12 +502,35 @@
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </div>
-                <img
-                  src="./images/img(8).jpg"
+                <picture>
+                <source
+                  srcset="./images/app/app9-d.webp 1x, ./images/app/app9-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app9-d.jpg 1x, ./images/app/app9-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/app/app9-t.webp 1x, ./images/app/app9-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app9-t.jpg 1x, ./images/app/app9-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/app/app9.webp 1x, ./images/app/app9@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/app/app9.jpg 1x, ./images/app/app9@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
+                  <img
+                  src="./images/app/app9.jpg"
                   alt="person typing on a computer"
-                  width="370"
-                  height="294px"
-                />
+                  /></picture>
               </div>
 
               <figcaption>

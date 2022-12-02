@@ -15,4 +15,9 @@
   padding-left: 42px;
   padding-right: 28px;
   margin-left: 12px;
+
+   @media screen and (max-width: $tablet) {
+     margin-top: 20px;
+     margin-left: 0;
+    }
 }

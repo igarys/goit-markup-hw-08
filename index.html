@@ -24,7 +24,41 @@
   </head>
   <body>
     <header>
-      <div class="container header">
+      <!-- mobile menu -->
+      <div class="mobile-menu d-none">
+        <button class="mobile-menu__btn">
+          <svg class="mobile-menu__btn__icon" width="18.67" height="18.67">
+                  <use href="./images/icons.svg#icon-close-menu-btn"></use>
+           </svg>
+        </button>
+        <div class="container-menu">
+         <div>
+          <ul class="mobile-menu__list">
+          <li class="mobile-menu__list__item"><a class="mobile-menu__list__item__link" href="./index.html">Agencja</a></li>
+          <li class="mobile-menu__list__item"><a class="mobile-menu__list__item__link" href="./portfolio.html">Portfolio</a></li>
+          <li class="mobile-menu__list__item"><a class="mobile-menu__list__item__link" href="/">Kontakt</a></li>
+         </ul>
+         </div>
+         <div class="mobile-menu__contact">
+         <ul class="mobile-menu__list mobile-menu__contact__list">
+          <li class="mobile-menu__contact__list__item"><a class="mobile-menu__contact__list__item" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li class="mobile-menu__contact__list__item--mail"><a class="mobile-menu__contact__list__item--mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+         </ul>
+         <div class="mobile-menu__social-media">
+          <div>Instagram</div>
+          <span class="mobile-menu__social-media__line"></span>
+          <div>Twitter</div> 
+          <span class="mobile-menu__social-media__line"></span>
+          <div>Facebook</div>  
+          <span class="mobile-menu__social-media__line"></span>
+          <div>LinkedIn</div>
+         </div>
+         </div>
+        </div>
+      </div>
+      <!-- mobile menu ends  -->
+      <div class="container">
+        <div class="header">
         <nav class="nav">
           <a class="nav__logo" href="./index.html"
             ><span>Web</span><span class="nav__studio">Studio</span>
@@ -63,7 +97,14 @@
             </li>
           </ul>
         </div>
+        <div class="mobile-menu__button">
+         <svg width="24" height="16">
+           <use href="./images/icons.svg#icon-menu"></use>
+         </svg>
+       </div>
       </div>
+      </div> 
+    
     </header>
 
     <main>
@@ -73,7 +114,7 @@
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
           <button class="motto__btn" data-modal-open>
-            <span>Zamów usługe</span>
+            <span>Zamów usługę</span>
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -166,8 +207,8 @@
         </div>
       </section>
 
-      <section class="section">
-        <ul class="box container">
+      <section class="section container">
+        <ul class="box ">
           <li class="box__feature">
             <div class="box__feature__svg">
               <svg class="box__feature__svg--icon">
@@ -235,7 +276,7 @@
         </ul>
       </section>
 
-      <section class="container">
+      <section class="container we-do-section">
         <h2 class="main-header">Czym się zajmujemy</h2>
         <ul class="box">
           <li class="box__we-do">
@@ -282,12 +323,35 @@
           <ul class="box">
             <li>
               <figure class="box__image box__image--team">
+                <picture>
+                <source
+                  srcset="./images/team/team1-d.webp 1x, ./images/team/team1-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team1-d.jpg 1x, ./images/team/team1-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/team/team1-t.webp 1x, ./images/team/team1-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team1-t.jpg 1x, ./images/team/team1-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/team/team1.webp 1x, ./images/team/team1@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team1.jpg 1x, ./images/team/team1@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
                 <img
-                  src="./images/img1.jpg"
+                  src="./images/team/team1.jpg"
                   alt="team member photo"
-                  width="270"
-                  height="260"
-                />
+                 /></picture>
                 <figcaption>
                   <h3 class="team__names"><b>John Doe</b></h3>
 
@@ -336,12 +400,35 @@
 
             <li>
               <figure class="box__image box__image--team">
+                 <picture>
+                <source
+                  srcset="./images/team/team2-d.webp 1x, ./images/team/team2-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team2-d.jpg 1x, ./images/team/team2-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/team/team2-t.webp 1x, ./images/team/team2-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team2-t.jpg 1x, ./images/team/team2-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/team/team2.webp 1x, ./images/team/team2@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team2.jpg 1x, ./images/team/team2@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
                 <img
-                  src="./images/img2.jpg"
+                  src="./images/team/team2.jpg"
                   alt="team member photo"
-                  width="270"
-                  height="260"
-                />
+                /></picture>
                 <figcaption>
                   <h3 class="team__names"><b>John Doe</b></h3>
                   <p class="team__occupation">Frontend Developer</p>
@@ -388,12 +475,35 @@
             </li>
             <li>
               <figure class="box__image box__image--team">
+                 <picture>
+                <source
+                  srcset="./images/team/team3-d.webp 1x, ./images/team/team3-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team3-d.jpg 1x, ./images/team/team3-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/team/team3-t.webp 1x, ./images/team/team3-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team3-t.jpg 1x, ./images/team/team3-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/team/team3.webp 1x, ./images/team/team3@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team3.jpg 1x, ./images/team/team3@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
                 <img
-                  src="./images/img3.jpg"
+                  src="./images/team/team3.jpg"
                   alt="team member photo"
-                  width="270"
-                  height="260"
-                />
+                /></picture>
                 <figcaption>
                   <h3 class="team__names"><b>John Doe</b></h3>
                   <p class="team__occupation">Marketing</p>
@@ -440,12 +550,35 @@
             </li>
             <li>
               <figure class="box__image box__image--team">
+             <picture>
+                <source
+                  srcset="./images/team/team4-d.webp 1x, ./images/team/team4-d@2x.webp 2x"
+                  media="(min-width: 1200px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team4-d.jpg 1x, ./images/team/team4-d@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                <source
+                  srcset="./images/team/team4-t.webp 1x, ./images/team/team4-t@2x.webp 2x"
+                  media="(min-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team4-t.jpg 1x, ./images/team/team4-t@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                <source
+                  srcset="./images/team/team4.webp 1x, ./images/team/team4@2x.webp 2x"
+                  media="(max-width: 768px)"  type="image/webp">
+                </source>
+                <source
+                  srcset="./images/team/team4.jpg 1x, ./images/team/team4@2x.jpg 2x"
+                  media="(max-width: 768px)">
+                </source>
                 <img
-                  src="./images/img4.jpg"
+                  src="./images/team/team4.jpg"
                   alt="team member photo"
-                  width="270"
-                  height="260"
-                />
+                /></picture>
                 <figcaption>
                   <h3 class="team__names"><b>John Doe</b></h3>
                   <p class="team__occupation">UI Designer</p>
@@ -620,5 +753,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
