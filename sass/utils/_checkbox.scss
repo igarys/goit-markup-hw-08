@@ -46,13 +46,21 @@
   display: flex;
   display: none;
   cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    top:5px;
+  }
 }
 .checkbox__svg {
   position: absolute;
   left: -21px;
-  top: 7px;
+  top: 5px;
   z-index: 1;
   cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    top:1px;
+  }
 }
 
 .checkbox input:checked ~ .checkbox__checked:after {

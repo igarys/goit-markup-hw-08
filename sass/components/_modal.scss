@@ -22,5 +22,8 @@
   position: absolute;
   top: 8px;
   right: 8px;
+  &:hover{
+    fill: $color-blue;
+  }
 }
 }
