@@ -8,21 +8,22 @@
   margin: 0;
 }
 .app__header {
-  width: 322px;
+  // width: 322px;
   height: 36px;
   font-family: inherit;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: $color-black;
   margin-top: 20px;
   margin-bottom: 4px;
   margin-left: 24px;
   display: flex;
 
-  /* padding-left: 24px; */
-  /* text-align: start; */
+  @media screen and (min-width: $mobile) {
+  font-size: 18px;
+    
 }
-
+}
 .app__description {
   font-family: inherit;
   font-weight: 400;
@@ -49,6 +50,11 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+
+    @media screen and (min-width:$mobile) {
+      width: 450px;
+    }
 
     @media screen and (min-width: $tablet) {
     width: 354px;  
@@ -74,7 +80,7 @@
 /* Hw 04 */
 
 .box__logo {
-  width: 210px;
+  width: 290px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -89,6 +95,9 @@
     cursor: pointer;
   }
 
+   @media screen and (min-width: $mobile) {
+  width: 210px;
+   }
     @media screen and (min-width: $tablet) {
   width: 226px;
   }
@@ -109,21 +118,20 @@
 
 .overlay {
   width: 100%;
-  height: 294px;
+  height: 100%;
+  // height: 294px;
   position: relative;
   overflow: hidden;
   display: flex;
 }
 .app__content {
   color: $color-white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  padding-inline: 24px;
   text-align: left;
-  padding-block: 77px;
-  
+  padding: 10px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -131,6 +139,12 @@
   top: 100%;
   transition: top 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @media screen and (min-width: $mobile) {
+    padding-inline: 24px;
+    padding-block: 77px;
+  font-size: 18px; 
+  }
   
   @media screen and (min-width: $tablet) {
     padding-block: 49px;

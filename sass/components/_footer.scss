@@ -1,17 +1,26 @@
 .footer {
   background-color: $color-dark-grey;
 
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
   &__wrapper {
     padding-block: 60px;
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
 
-    @media screen and (max-width: $tablet) {
      justify-content: center;
      text-align: center;
      gap: 60px;
-    }
+
+     @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-wrap: nowrap;
+      text-align: left;
+      justify-content: space-between;
+     }
+  
   }
 
 }
@@ -34,6 +43,10 @@
     padding-left: 0;
     margin: 0;
     margin-top: 20px;
+   
+    @media screen and (min-width: $desktop) {
+      width: 246px;
+    }
   }
 }
 .footer__logo .footer__studio {
@@ -52,10 +65,10 @@
   margin-block: 9px;
 }
 .footer__social-media {
-  padding-top: 12px;
-
-  @media screen and (max-width: $tablet) {
-    padding-top: 0;
+  padding-top: 0;
+  
+  @media screen and (min-width: $desktop) {
+    padding-top: 12px;
   }
 
   &__header {
@@ -73,25 +86,65 @@
 .social-media__icon--footer {
   fill: $color-white;
 }
+ .footer {
 
+    &__newsletter {
+    width: 100%;
+    @media screen and (min-width: $desktop) {
+      padding-top: 12px;
+    }
+
+  }
+
+  &__fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 450px;
+    
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+    }
+  }
+}
 .footer {
   &__form {
     display: flex;
     flex-wrap: wrap;
-
-    @media screen and (max-width: $tablet) {
-      justify-content: center;
-      max-width: 450px;
+    justify-content: center;
+    max-width: 100vw;
+    
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin: auto;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-wrap: nowrap;
+      justify-content:left;
+      margin: 0;
+      width: 570px;
+     
     }
   }
   &__input {
     background-color: transparent;
     outline: 0;
     border: 0;
-    margin: auto 0;
+    margin: 0 auto;
     padding-left: 16px;
     color: $color-white;
     width: 100%;
+
+    @media screen and (min-width:$desktop) {
+      width: 358px;
+    }
+
   }
 }
 
@@ -99,30 +152,7 @@
   margin: auto;
   margin-left: 24px;
 }
-.footer {
-  &__fieldset {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    width: 358px;
-    height: 50px;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    display: flex;
 
-    @media screen and (max-width:$tablet) {
-     width: 450px;
-    }
-  }
-  &__newsletter {
-    padding-top: 12px;
-    margin-left: 8px;
-    @media screen and (max-width: $tablet) {
-      padding-top: 0;
-      margin-left: 0;
-    }
-  }
-}
 .btn--send {
   margin: auto;
   align-items: center;

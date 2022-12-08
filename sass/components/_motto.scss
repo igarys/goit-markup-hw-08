@@ -3,14 +3,17 @@
   background-position: center center;
   display: flex;
   background-repeat: no-repeat;
+  width: 100vw;
+  height: 400px;
 
-  @media screen and (max-width: $tablet) {
-    background-image: url(/images/header.jpg), url(/images/header@2x.jpg,), url(/images/header.webp), url(/images/header@2x.webp);
-    height: 400px;
+  @media screen and (min-width: $mobile) {
+    background-image: url(/images/header.jpg), url(/images/header@2x.jpg), url(/images/header.webp), url(/images/header@2x.webp);
+    
   }
   @media screen and (min-width: $tablet) {
     background-image: url(/images/header-t.jpg), url(/images/header-t@2x.jpg), url(/images/header-t.webp), url(/images/header-t@2x.webp);
-  }
+  
+}
   @media screen and (min-width: $desktop) {
     background-image: url(./images/header-d.jpg), url(/images/header-d@2x.jpg), url(/images/header-d.webp), url(./images/background@2x.webp);
     height: 600px;
@@ -18,25 +21,28 @@
 
   &__header { 
     font-family: inherit;
-    font-size: 44px;
     font-weight: 900;
     color: #ffffff;
     margin-block: 0 30px;
-    margin-inline: auto;
     letter-spacing: 0.06em;
-    line-height: 1.36;
-
-    @media screen and (max-width: 1199px) {
-      font-size: 26px;
-      line-height: 1.61;
-      width: 365px;
+    font-size: 26px;
+    line-height: 1.61;
+    
+    
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
     }
   }
   &__wrapper {
-    margin: auto;
     text-align: center;
-    justify-content: center;
-    width: 696px;
+    margin: auto;
+    max-width: 365px;
+    padding: 0;
+
+    @media screen and (min-width: $desktop) {
+    max-width: 696px;
+    }
   }
 }
 
