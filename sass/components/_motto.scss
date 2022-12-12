@@ -16,9 +16,8 @@
       url(../images/header-t@2x.webp);
   }
   @media screen and (min-width: $desktop) {
-    background-image: url(.../images/header-d.jpg),
-      url(.../images/header-d@2x.jpg), url(.../images/header-d.webp),
-      url(.../images/background@2x.webp);
+    background-image: url(./images/header-d.jpg), url(./images/header-d@2x.jpg),
+      url(./images/header-d.webp), url(./images/background@2x.webp);
     height: 600px;
   }
 
