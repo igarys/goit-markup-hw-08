@@ -6,7 +6,7 @@
   width: 100%;
   height: 400px;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 320px) {
      background-image: url(../images/header.jpg), 
       url(../images/header.webp);
   }
@@ -16,8 +16,8 @@
       url(../images/header-t.webp);
   }
   @media screen and (min-width: $desktop) {
-    background-image: url(./images/header-d.jpg), 
-      url(./images/header-d.webp);
+    background-image: url(../images/header-d.jpg), 
+      url(../images/header-d.webp);
     height: 600px;
   }
 
