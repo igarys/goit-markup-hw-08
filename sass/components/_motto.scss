@@ -3,19 +3,19 @@
   background-position: center center;
   display: flex;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: 400px;
 
   @media screen and (min-width: $mobile) {
-    background-image: url(/images/header.jpg), url(/images/header@2x.jpg), url(/images/header.webp), url(/images/header@2x.webp);
+    background-image: url(../images/header.jpg), url(../images/header@2x.jpg), url(../images/header.webp), url(../images/header@2x.webp);
     
   }
   @media screen and (min-width: $tablet) {
-    background-image: url(/images/header-t.jpg), url(/images/header-t@2x.jpg), url(/images/header-t.webp), url(/images/header-t@2x.webp);
+    background-image: url(../images/header-t.jpg), url(../images/header-t@2x.jpg), url(../images/header-t.webp), url(../images/header-t@2x.webp);
   
 }
   @media screen and (min-width: $desktop) {
-    background-image: url(./images/header-d.jpg), url(/images/header-d@2x.jpg), url(/images/header-d.webp), url(./images/background@2x.webp);
+    background-image: url(../images/header-d.jpg), url(../images/header-d@2x.jpg), url(../images/header-d.webp), url(../images/background@2x.webp);
     height: 600px;
   }
 
