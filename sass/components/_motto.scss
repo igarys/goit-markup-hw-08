@@ -6,19 +6,17 @@
   width: 100%;
   height: 400px;
   max-width: 1600px;
+  margin: 0 auto;
 
   @media screen and (min-width: 320px) {
-     background-image: url(../images/header.jpg), 
-      url(../images/header.webp);
+    background-image: url(../images/header.jpg), url(../images/header.webp);
   }
 
   @media screen and (min-width: $tablet) {
-    background-image: url(../images/header-t.jpg),
-      url(../images/header-t.webp);
+    background-image: url(../images/header-t.jpg), url(../images/header-t.webp);
   }
   @media screen and (min-width: $desktop) {
-    background-image: url(../images/header-d.jpg), 
-      url(../images/header-d.webp);
+    background-image: url(../images/header-d.jpg), url(../images/header-d.webp);
     height: 600px;
   }
 
@@ -68,7 +66,7 @@
   (min-resolution: 2dppx) and (min-width: 320px) {
   .motto {
     background-image: url(../images/header@2x.jpg),
-   url(../images/header@2x.webp);
+      url(../images/header@2x.webp);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
@@ -83,7 +81,7 @@
   (min-resolution: 192dpi) and (min-width: $desktop),
   (min-resolution: 2dppx) and (min-width: $desktop) {
   .motto {
-    background-image:  url(../images/header-d@2x.jpg),
-    url(../images/background@2x.webp);
+    background-image: url(../images/header-d@2x.jpg),
+      url(../images/background@2x.webp);
   }
 }
